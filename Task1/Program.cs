@@ -7,23 +7,22 @@
 Console.Write("Введите пятизначное число N: ");
 int N = int.Parse(Console.ReadLine()!);
 
-int N5;
-int N4;
+
 int N2;
 int N1;
 
-N5 = N % 10;
+N2 = N % 10;
 N1 = N / 10000;
 
-if (N1 != N5)
+if (N1 != N2)
 {
     Console.WriteLine("Число не является палиндором");
 }
 else
 { 
-    N4 = (N % 100) / 10;
-    N2 = (N / 1000) % 10;
-        if (N2 == N4)
+    N2 = (N % 100) / 10;
+    N1 = (N / 1000) % 10;
+        if (N1 == N2)
             {
                 Console.WriteLine("Число является полиндором");
             }
